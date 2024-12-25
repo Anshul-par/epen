@@ -1,0 +1,21 @@
+version: "3.8"
+services:
+  epen:
+    build:
+      dockerfile: Dockerfile
+      context: .
+    ports:
+      - "3213:5120"
+    environment:
+      - PORT=5120
+      - JWT_SECRET=ansh
+      - NODE_ENV=dev
+      - DB_URL=mongodb+srv://Par-Client:iGUtdxXc58pegBuF@cluster0.uapdrwt.mongodb.net/buckbeak?retryWrites=true&w=majority
+      - AWS_ACCESS_KEY_DO=NMCX6WOAVGTQWOI4G5FI
+      - AWS_SECRET_KEY_DO=++RI8VTlCgn9rTocYipS/mmsC8vVq/S+2XhbPvja3ck
+      - AWS_REGION=sgp1
+      - S3_END_POINT=https://sgp1.digitaloceanspaces.com
+      - AWS_BUCKET_NAME=rabbitvpn
+      - BASE_URL=https://rabbitvpn.sgp1.digitaloceanspaces.com
+      - EMAIL_USER =desaivivek11@gmail.com
+      - EMAIL_PASS=ejng gnal teke mksz
